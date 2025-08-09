@@ -1,0 +1,6 @@
+framework module Pods_DSPProject_UIKIT_DSPProject_UIKITUITests {
+  umbrella header "Pods-DSPProject-UIKIT-DSPProject-UIKITUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

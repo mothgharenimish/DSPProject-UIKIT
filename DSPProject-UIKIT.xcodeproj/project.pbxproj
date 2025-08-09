@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		06506F0165531B587B8C94D5 /* Pods_DSPProject_UIKIT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC9AC26846AEAF22F02AFBF /* Pods_DSPProject_UIKIT.framework */; };
+		91A3FD8949251F22BBE58911 /* Pods_DSPProject_UIKITTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44218A57A95E700FC92B53A /* Pods_DSPProject_UIKITTests.framework */; };
+		EBC20F938C880B9D79775946 /* Pods_DSPProject_UIKIT_DSPProject_UIKITUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C3C81B413D5C309E9E26E0 /* Pods_DSPProject_UIKIT_DSPProject_UIKITUITests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2FD94B8E2E46171700DF9133 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01C3C81B413D5C309E9E26E0 /* Pods_DSPProject_UIKIT_DSPProject_UIKITUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSPProject_UIKIT_DSPProject_UIKITUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD94B772E46171400DF9133 /* DSPProject-UIKIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSPProject-UIKIT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD94B8D2E46171700DF9133 /* DSPProject-UIKITTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DSPProject-UIKITTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD94B972E46171700DF9133 /* DSPProject-UIKITUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DSPProject-UIKITUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36F09E392FCA3EFEB98C012A /* Pods-DSPProject-UIKITTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSPProject-UIKITTests.release.xcconfig"; path = "Target Support Files/Pods-DSPProject-UIKITTests/Pods-DSPProject-UIKITTests.release.xcconfig"; sourceTree = "<group>"; };
+		70B806705F7DB307CC146820 /* Pods-DSPProject-UIKIT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSPProject-UIKIT.debug.xcconfig"; path = "Target Support Files/Pods-DSPProject-UIKIT/Pods-DSPProject-UIKIT.debug.xcconfig"; sourceTree = "<group>"; };
+		7CC9AC26846AEAF22F02AFBF /* Pods_DSPProject_UIKIT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSPProject_UIKIT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7CBF15E83246FD30876FFD /* Pods-DSPProject-UIKIT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSPProject-UIKIT.release.xcconfig"; path = "Target Support Files/Pods-DSPProject-UIKIT/Pods-DSPProject-UIKIT.release.xcconfig"; sourceTree = "<group>"; };
+		A726B9DB46F9B6DABE764362 /* Pods-DSPProject-UIKIT-DSPProject-UIKITUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSPProject-UIKIT-DSPProject-UIKITUITests.release.xcconfig"; path = "Target Support Files/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ADD61A8D12E1BC92923F197E /* Pods-DSPProject-UIKITTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSPProject-UIKITTests.debug.xcconfig"; path = "Target Support Files/Pods-DSPProject-UIKITTests/Pods-DSPProject-UIKITTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D180D17126D130EC23F82FC9 /* Pods-DSPProject-UIKIT-DSPProject-UIKITUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSPProject-UIKIT-DSPProject-UIKITUITests.debug.xcconfig"; path = "Target Support Files/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D44218A57A95E700FC92B53A /* Pods_DSPProject_UIKITTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSPProject_UIKITTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -37,6 +52,20 @@
 			);
 			target = 2FD94B762E46171400DF9133 /* DSPProject-UIKIT */;
 		};
+		2FD94BC02E46229200DF9133 /* Exceptions for "DSPProject-UIKIT" folder in "DSPProject-UIKITTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Fonts/Mukta-SemiBold.ttf",
+			);
+			target = 2FD94B8C2E46171700DF9133 /* DSPProject-UIKITTests */;
+		};
+		2FD94BC12E46229200DF9133 /* Exceptions for "DSPProject-UIKIT" folder in "DSPProject-UIKITUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Fonts/Mukta-SemiBold.ttf",
+			);
+			target = 2FD94B962E46171700DF9133 /* DSPProject-UIKITUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +73,8 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				2FD94B9F2E46171700DF9133 /* Exceptions for "DSPProject-UIKIT" folder in "DSPProject-UIKIT" target */,
+				2FD94BC02E46229200DF9133 /* Exceptions for "DSPProject-UIKIT" folder in "DSPProject-UIKITTests" target */,
+				2FD94BC12E46229200DF9133 /* Exceptions for "DSPProject-UIKIT" folder in "DSPProject-UIKITUITests" target */,
 			);
 			path = "DSPProject-UIKIT";
 			sourceTree = "<group>";
@@ -65,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06506F0165531B587B8C94D5 /* Pods_DSPProject_UIKIT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A3FD8949251F22BBE58911 /* Pods_DSPProject_UIKITTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +112,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC20F938C880B9D79775946 /* Pods_DSPProject_UIKIT_DSPProject_UIKITUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CCD6E07165183B76BE5F75A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70B806705F7DB307CC146820 /* Pods-DSPProject-UIKIT.debug.xcconfig */,
+				7E7CBF15E83246FD30876FFD /* Pods-DSPProject-UIKIT.release.xcconfig */,
+				D180D17126D130EC23F82FC9 /* Pods-DSPProject-UIKIT-DSPProject-UIKITUITests.debug.xcconfig */,
+				A726B9DB46F9B6DABE764362 /* Pods-DSPProject-UIKIT-DSPProject-UIKITUITests.release.xcconfig */,
+				ADD61A8D12E1BC92923F197E /* Pods-DSPProject-UIKITTests.debug.xcconfig */,
+				36F09E392FCA3EFEB98C012A /* Pods-DSPProject-UIKITTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2FD94B6E2E46171400DF9133 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +139,8 @@
 				2FD94B902E46171700DF9133 /* DSPProject-UIKITTests */,
 				2FD94B9A2E46171700DF9133 /* DSPProject-UIKITUITests */,
 				2FD94B782E46171400DF9133 /* Products */,
+				1CCD6E07165183B76BE5F75A /* Pods */,
+				EA60A88603246D25CB0FC1F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +154,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EA60A88603246D25CB0FC1F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CC9AC26846AEAF22F02AFBF /* Pods_DSPProject_UIKIT.framework */,
+				01C3C81B413D5C309E9E26E0 /* Pods_DSPProject_UIKIT_DSPProject_UIKITUITests.framework */,
+				D44218A57A95E700FC92B53A /* Pods_DSPProject_UIKITTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FD94BA02E46171700DF9133 /* Build configuration list for PBXNativeTarget "DSPProject-UIKIT" */;
 			buildPhases = (
+				3420745BA1E1F5228C5A6C8F /* [CP] Check Pods Manifest.lock */,
 				2FD94B732E46171400DF9133 /* Sources */,
 				2FD94B742E46171400DF9133 /* Frameworks */,
 				2FD94B752E46171400DF9133 /* Resources */,
+				D2547ACCC341E67C31D4D2AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,8 +185,6 @@
 				2FD94B792E46171400DF9133 /* DSPProject-UIKIT */,
 			);
 			name = "DSPProject-UIKIT";
-			packageProductDependencies = (
-			);
 			productName = "DSPProject-UIKIT";
 			productReference = 2FD94B772E46171400DF9133 /* DSPProject-UIKIT.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FD94BA52E46171700DF9133 /* Build configuration list for PBXNativeTarget "DSPProject-UIKITTests" */;
 			buildPhases = (
+				8B420DA880C538CCDED34DCD /* [CP] Check Pods Manifest.lock */,
 				2FD94B892E46171700DF9133 /* Sources */,
 				2FD94B8A2E46171700DF9133 /* Frameworks */,
 				2FD94B8B2E46171700DF9133 /* Resources */,
@@ -147,8 +207,6 @@
 				2FD94B902E46171700DF9133 /* DSPProject-UIKITTests */,
 			);
 			name = "DSPProject-UIKITTests";
-			packageProductDependencies = (
-			);
 			productName = "DSPProject-UIKITTests";
 			productReference = 2FD94B8D2E46171700DF9133 /* DSPProject-UIKITTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FD94BA82E46171700DF9133 /* Build configuration list for PBXNativeTarget "DSPProject-UIKITUITests" */;
 			buildPhases = (
+				2A65C50C2281B146A1C0E482 /* [CP] Check Pods Manifest.lock */,
 				2FD94B932E46171700DF9133 /* Sources */,
 				2FD94B942E46171700DF9133 /* Frameworks */,
 				2FD94B952E46171700DF9133 /* Resources */,
+				2CEBB6C581918639C30317C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,8 +230,6 @@
 				2FD94B9A2E46171700DF9133 /* DSPProject-UIKITUITests */,
 			);
 			name = "DSPProject-UIKITUITests";
-			packageProductDependencies = (
-			);
 			productName = "DSPProject-UIKITUITests";
 			productReference = 2FD94B972E46171700DF9133 /* DSPProject-UIKITUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -244,6 +302,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A65C50C2281B146A1C0E482 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CEBB6C581918639C30317C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3420745BA1E1F5228C5A6C8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DSPProject-UIKIT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B420DA880C538CCDED34DCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DSPProject-UIKITTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2547ACCC341E67C31D4D2AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DSPProject-UIKIT/Pods-DSPProject-UIKIT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DSPProject-UIKIT/Pods-DSPProject-UIKIT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DSPProject-UIKIT/Pods-DSPProject-UIKIT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2FD94B732E46171400DF9133 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,6 +453,7 @@
 /* Begin XCBuildConfiguration section */
 		2FD94BA12E46171700DF9133 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B806705F7DB307CC146820 /* Pods-DSPProject-UIKIT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,6 +461,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DSPProject-UIKIT/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -311,6 +483,7 @@
 		};
 		2FD94BA22E46171700DF9133 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E7CBF15E83246FD30876FFD /* Pods-DSPProject-UIKIT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +491,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DSPProject-UIKIT/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -373,7 +548,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -436,7 +611,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -457,6 +632,7 @@
 		};
 		2FD94BA62E46171700DF9133 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADD61A8D12E1BC92923F197E /* Pods-DSPProject-UIKITTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -475,6 +651,7 @@
 		};
 		2FD94BA72E46171700DF9133 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36F09E392FCA3EFEB98C012A /* Pods-DSPProject-UIKITTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -493,6 +670,7 @@
 		};
 		2FD94BA92E46171700DF9133 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D180D17126D130EC23F82FC9 /* Pods-DSPProject-UIKIT-DSPProject-UIKITUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -509,6 +687,7 @@
 		};
 		2FD94BAA2E46171700DF9133 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A726B9DB46F9B6DABE764362 /* Pods-DSPProject-UIKIT-DSPProject-UIKITUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
