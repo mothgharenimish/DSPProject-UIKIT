@@ -8,6 +8,8 @@ target 'DSPProject-UIKIT' do
   # Pods for DSPProject-UIKIT
     pod 'Alamofire'
     pod 'SwiftyJSON'
+    pod 'IQKeyboardManagerSwift'
+    pod 'CountryPickerView'
 
   target 'DSPProject-UIKITTests' do
     inherit! :search_paths
