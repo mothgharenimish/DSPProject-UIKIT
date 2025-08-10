@@ -297,6 +297,7 @@
                                                                 <state key="normal" title="Verify"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Verify">
                                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                    <color key="baseForegroundColor" name="#0F5CFFB2"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="emailverifyAction:" destination="aha-Tu-7NY" eventType="touchUpInside" id="Awc-Ut-IqI"/>
@@ -376,6 +377,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Verify">
                                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                    <color key="baseForegroundColor" name="#0F5CFFB2"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="mobileverifyAction:" destination="aha-Tu-7NY" eventType="touchUpInside" id="uYQ-ag-Uu0"/>
@@ -441,6 +443,7 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
+                                                    <action selector="createaccountAction:" destination="aha-Tu-7NY" eventType="touchUpInside" id="maV-9O-GNC"/>
                                                     <action selector="loginAction:" destination="aaA-Ds-8ac" eventType="touchUpInside" id="mnD-yO-olm"/>
                                                 </connections>
                                             </button>
@@ -541,19 +544,25 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Sqh-my-sor">
-                                        <rect key="frame" x="18" y="203.66666666666669" width="324" height="34.333333333333343"/>
+                                        <rect key="frame" x="18" y="193" width="324" height="45"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LC-jU-J1k">
-                                                <rect key="frame" x="0.0" y="0.0" width="151" height="34.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="151" height="45"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXu-3t-GeX">
-                                                <rect key="frame" x="173" y="0.0" width="151" height="34.333333333333336"/>
+                                                <rect key="frame" x="173" y="0.0" width="151" height="45"/>
+                                                <color key="backgroundColor" name="#0F5CFFB2"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Veriy">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="59Z-bl-cD5"/>
+                                        </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIO-Om-9r0" customClass="OTPFieldView" customModule="OTPFieldView">
                                         <rect key="frame" x="18" y="119.33333333333331" width="324" height="50"/>
@@ -573,7 +582,6 @@
                                     <constraint firstItem="NiZ-n8-1Z8" firstAttribute="leading" secondItem="qAF-mg-zxM" secondAttribute="leading" constant="15" id="DdQ-IK-9Zs"/>
                                     <constraint firstItem="kIO-Om-9r0" firstAttribute="leading" secondItem="qAF-mg-zxM" secondAttribute="leading" constant="18" id="Kng-sg-RC9"/>
                                     <constraint firstItem="NiZ-n8-1Z8" firstAttribute="top" secondItem="RXx-S9-jxf" secondAttribute="bottom" constant="17" id="Lup-2f-kUr"/>
-                                    <constraint firstItem="Sqh-my-sor" firstAttribute="top" secondItem="kIO-Om-9r0" secondAttribute="bottom" constant="34.329999999999998" id="OkD-Sf-SZo"/>
                                     <constraint firstAttribute="trailing" secondItem="NiZ-n8-1Z8" secondAttribute="trailing" constant="15" id="aEL-wp-LIq"/>
                                     <constraint firstItem="kIO-Om-9r0" firstAttribute="top" secondItem="NiZ-n8-1Z8" secondAttribute="bottom" constant="20" id="h02-5f-y8H"/>
                                     <constraint firstAttribute="bottom" secondItem="Sqh-my-sor" secondAttribute="bottom" constant="22" id="iEA-MC-KT8"/>
@@ -605,6 +613,8 @@
                         <outlet property="countrypickerBtn" destination="mRz-Aa-C5H" id="J62-UV-RLV"/>
                         <outlet property="countrypickerImg" destination="qEO-R1-beP" id="KWM-8a-YAu"/>
                         <outlet property="countrypickerView" destination="Ng3-aj-B7o" id="IGE-Y6-0w3"/>
+                        <outlet property="createaccountBtn" destination="YCJ-MR-WzZ" id="S4Z-6S-uy0"/>
+                        <outlet property="darknessView" destination="14C-sS-JPN" id="g2G-ex-Boq"/>
                         <outlet property="emailView" destination="2sY-pT-85Y" id="vix-bv-cxn"/>
                         <outlet property="emailtxtField" destination="Q1I-RY-iuB" id="Cqu-H9-UOG"/>
                         <outlet property="emailverifyBtn" destination="vBT-gZ-LOk" id="cc0-NJ-Mlw"/>
@@ -614,6 +624,7 @@
                         <outlet property="nameView" destination="Fi7-E6-5s8" id="nAp-WD-AUo"/>
                         <outlet property="nametxtField" destination="UNN-87-R7O" id="KL3-Fz-0lj"/>
                         <outlet property="otpView" destination="kIO-Om-9r0" id="WpU-hF-wRO"/>
+                        <outlet property="otpverificationView" destination="qAF-mg-zxM" id="iaU-AU-t34"/>
                         <outlet property="passwordView" destination="HCV-7A-UhK" id="7q0-4q-HK0"/>
                         <outlet property="passwordtxtField" destination="8Rp-r7-mhc" id="U5W-2A-qmc"/>
                     </connections>

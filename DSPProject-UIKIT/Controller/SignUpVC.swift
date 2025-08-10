@@ -10,22 +10,9 @@ import CountryPickerView
 import OTPFieldView
 
 class SignUpVC: UIViewController, OTPFieldViewDelegate{
-    func shouldBecomeFirstResponderForOTP(otpTextFieldIndex index: Int) -> Bool {
-               return true
-    }
     
-    func enteredOTP(otp: String) {
-        print("OTPString: \(otp)")
-
-    }
     
-    func hasEnteredAllOTP(hasEnteredAll: Bool) -> Bool {
-        return true
-
-    }
-    
-  
-    
+    @IBOutlet weak var createaccountBtn: UIButton!
     @IBOutlet weak var nameView: UIView!
     @IBOutlet weak var nametxtField: UITextField!
     @IBOutlet weak var companyView: UIView!
@@ -43,11 +30,18 @@ class SignUpVC: UIViewController, OTPFieldViewDelegate{
     @IBOutlet weak var passwordView: UIView!
     @IBOutlet weak var passwordtxtField: UITextField!
     @IBOutlet weak var otpView: OTPFieldView!
+    @IBOutlet weak var darknessView: UIView!
+    @IBOutlet weak var otpverificationView: UIView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.darknessView.isHidden = true
+        self.otpverificationView.isHidden = true
+        self.emailverifyBtn.isEnabled = false
+        self.mobileverifyBtn.isEnabled = false
         
         self.nameView.setCornerRadiusView(7)
         self.nameView.layer.borderColor = UIColor(hex: "#BFC8D9")?.cgColor
@@ -68,9 +62,9 @@ class SignUpVC: UIViewController, OTPFieldViewDelegate{
         self.passwordView.setCornerRadiusView(7)
         self.passwordView.layer.borderColor = UIColor(hex: "#BFC8D9")?.cgColor
         self.passwordView.layer.borderWidth = 2.0
-
+        
         setupOtpView()
-       
+        
     }
     
     
@@ -88,16 +82,37 @@ class SignUpVC: UIViewController, OTPFieldViewDelegate{
         self.otpView.initializeUI()
         
         // Apply corner radius to each OTP field
-          for field in self.otpView.subviews {
-              field.layer.cornerRadius = 8
-              field.layer.masksToBounds = true
-          }
+        for field in self.otpView.subviews {
+            field.layer.cornerRadius = 8
+            field.layer.masksToBounds = true
+        }
     }
     
-
- 
+    
+    
     @IBAction func emailverifyAction(_ sender: UIButton) {
         
+        guard let email = emailtxtField.text,!email.isEmpty else {
+            
+            print("Please enter the Email ID")
+            return
+        }
+        
+        APIManager.shared.OtpsendbyEmail(email: email) { [self] result in
+            
+            switch result {
+                
+                
+            case .success(let json):
+                print("OTP Response: \(json)")
+                self.otpverificationView.isHidden = false
+                self.darknessView.isHidden = false
+                
+            case .failure(let error):
+                print(" API Error: \(error.localizedDescription)")
+                
+            }
+        }
     }
     
     
@@ -107,11 +122,59 @@ class SignUpVC: UIViewController, OTPFieldViewDelegate{
     
     
     @IBAction func countrypickerAction(_ sender: UIButton) {
-
-       
+        
+        
     }
     
     
-  
+    func shouldBecomeFirstResponderForOTP(otpTextFieldIndex index: Int) -> Bool {
+        return true
+    }
+    
+    func enteredOTP(otp: String) {
+        print("OTPString: \(otp)")
+        
+    }
+    
+    func hasEnteredAllOTP(hasEnteredAll: Bool) -> Bool {
+        return true
+        
+    }
+    
+    
+    
+    
+    @IBAction func createaccountAction(_ sender: UIButton) {
+        
+        guard let name = nametxtField.text, !name.isEmpty,
+              let email = emailtxtField.text, !email.isEmpty,
+              let mobileno = mobilenotxtField.text, !mobileno.isEmpty,
+              let companyname = companytxtField.text, !companyname.isEmpty,
+              let password = passwordtxtField.text, !password.isEmpty else {
+            print("Please enter all the Fields")
+            
+            return
+            
+        }
+        
+        APIManager.shared.signup(name: name, email: email, companyname: companyname, phonenumber: mobileno, countrycode: "91", password: password) { [self] result in
+            
+            switch result {
+                
+            case .success(let json):
+                print("SignUp Response: \(json)")
+                self.emailverifyBtn.isEnabled = true
+                self.mobileverifyBtn.isEnabled = true
+                
+            case .failure(let error):
+                print(" API Error: \(error.localizedDescription)")
+                
+            }
+            
+        }
+    }
+    
+    
+    
     
 }

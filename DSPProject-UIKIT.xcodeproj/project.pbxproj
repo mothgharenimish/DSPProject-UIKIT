@@ -81,15 +81,11 @@
 		};
 		2FD94B902E46171700DF9133 /* DSPProject-UIKITTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "DSPProject-UIKITTests";
 			sourceTree = "<group>";
 		};
 		2FD94B9A2E46171700DF9133 /* DSPProject-UIKITUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "DSPProject-UIKITUITests";
 			sourceTree = "<group>";
 		};
@@ -337,9 +333,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests/Pods-DSPProject-UIKIT-DSPProject-UIKITUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -398,9 +398,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DSPProject-UIKIT/Pods-DSPProject-UIKIT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DSPProject-UIKIT/Pods-DSPProject-UIKIT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
