@@ -69,4 +69,12 @@ class LoginVC: UIViewController {
        }
     
     
+    
+    @IBAction func signupAction(_ sender: UIButton) {
+        
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "SignUpVC") as? SignUpVC
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+    
+    
 }

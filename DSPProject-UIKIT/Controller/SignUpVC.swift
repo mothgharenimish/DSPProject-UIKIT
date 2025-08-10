@@ -32,11 +32,21 @@ class SignUpVC: UIViewController, OTPFieldViewDelegate{
     @IBOutlet weak var otpView: OTPFieldView!
     @IBOutlet weak var darknessView: UIView!
     @IBOutlet weak var otpverificationView: UIView!
+    @IBOutlet weak var otpveriyBtn: UIButton!
+    @IBOutlet weak var cancelotpBtn: UIButton!
+    @IBOutlet weak var emaildoneImg: UIImageView!
+    @IBOutlet weak var mobilenodoneImg: UIImageView!
+    
+    var currentEnteredOTP: String = ""
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        self.emaildoneImg.isHidden = true
+        self.mobilenodoneImg.isHidden = true
         
         self.darknessView.isHidden = true
         self.otpverificationView.isHidden = true
@@ -118,6 +128,27 @@ class SignUpVC: UIViewController, OTPFieldViewDelegate{
     
     @IBAction func mobileverifyAction(_ sender: UIButton) {
         
+        guard let mobile = mobilenotxtField.text,!mobile.isEmpty else {
+            
+            print("Please enter the Email ID")
+            return
+        }
+        
+        APIManager.shared.OtpsendbyMobile(mobile: mobile){ [self] result in
+            
+            switch result {
+                
+                
+            case .success(let json):
+                print("OTP Response: \(json)")
+                self.otpverificationView.isHidden = false
+                self.darknessView.isHidden = false
+                
+            case .failure(let error):
+                print(" API Error: \(error.localizedDescription)")
+                
+            }
+        }
     }
     
     
@@ -133,6 +164,7 @@ class SignUpVC: UIViewController, OTPFieldViewDelegate{
     
     func enteredOTP(otp: String) {
         print("OTPString: \(otp)")
+        currentEnteredOTP = otp
         
     }
     
@@ -174,6 +206,69 @@ class SignUpVC: UIViewController, OTPFieldViewDelegate{
         }
     }
     
+    
+    
+    
+    @IBAction func cancelotpAction(_ sender: UIButton) {
+        
+        
+    }
+    
+    
+    
+    @IBAction func otpverifyAction(_ sender: UIButton) {
+        
+        guard !currentEnteredOTP.isEmpty else {
+               print("Please enter the OTP")
+               return
+           }
+           
+           let email = emailtxtField.text ?? ""
+           let mobile = mobilenotxtField.text ?? ""
+           
+           if !email.isEmpty {
+               APIManager.shared.OtpverifydbyEmail(email: email, otp: currentEnteredOTP) { [weak self] result in
+                   guard let self = self else { return }
+                   switch result {
+                   case .success(let json):
+                       print("OTP verify by email Response: \(json)")
+                       self.darknessView.isHidden = true
+                       self.otpverificationView.isHidden = true
+                       self.emailverifyBtn.isHidden = true
+                       self.emaildoneImg.isHidden = false
+                       
+                   case .failure(let error):
+                       print("API Error (Email): \(error.localizedDescription)")
+                   }
+               }
+           }
+           
+           if !mobile.isEmpty {
+               APIManager.shared.OtpverifydbyMobile(mobile: mobile, otp: currentEnteredOTP) { [weak self] result in
+                   guard let self = self else { return }
+                   switch result {
+                   case .success(let json):
+                       print("OTP verify by mobile Response: \(json)")
+                       self.darknessView.isHidden = true
+                       self.otpverificationView.isHidden = true
+                       self.mobileverifyBtn.isHidden = true
+                       self.mobilenodoneImg.isHidden = false
+                       
+                   case .failure(let error):
+                       print("API Error (Mobile): \(error.localizedDescription)")
+                   }
+               }
+           }
+    }
+    
+    
+    
+    
+    @IBAction func loginAction(_ sender: UIButton) {
+        
+        navigationController?.popViewController(animated: true)
+
+    }
     
     
     

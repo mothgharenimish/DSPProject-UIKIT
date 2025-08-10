@@ -114,4 +114,102 @@ class APIManager {
             }
         }
     }
+    
+    
+    func OtpverifydbyEmail(email: String,otp: String, completion: @escaping (Result<JSON, Error>) -> Void) {
+        
+        let url = "http://114.143.215.197:9000/dsp/verify/dspSignUpOtp"
+        
+        let parameters: [String: Any] = [
+            "email": email,
+            "otp" : otp
+            
+        ]
+        
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json"
+        ]
+        
+        AF.request(url,
+                   method: .post,
+                   parameters: parameters,
+                   encoding: JSONEncoding.default,
+                   headers: headers)
+        .validate()
+        .responseData { response in
+            switch response.result {
+            case .success(let data):
+                let json = JSON(data)
+                completion(.success(json))
+                
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    
+    func OtpsendbyMobile(mobile: String, completion: @escaping (Result<JSON, Error>) -> Void) {
+        
+        let url = "http://114.143.215.197:9000/dsp/sendVerificationOtp/signUp"
+        
+        let parameters: [String: Any] = [
+            "mobile": mobile,
+            
+        ]
+        
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json"
+        ]
+        
+        AF.request(url,
+                   method: .post,
+                   parameters: parameters,
+                   encoding: JSONEncoding.default,
+                   headers: headers)
+        .validate()
+        .responseData { response in
+            switch response.result {
+            case .success(let data):
+                let json = JSON(data)
+                completion(.success(json))
+                
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    func OtpverifydbyMobile(mobile: String,otp: String, completion: @escaping (Result<JSON, Error>) -> Void) {
+        
+        let url = "http://114.143.215.197:9000/dsp/verify/dspSignUpOtp"
+        
+        let parameters: [String: Any] = [
+            "mobile": mobile,
+            "otp" : otp
+            
+        ]
+        
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json"
+        ]
+        
+        AF.request(url,
+                   method: .post,
+                   parameters: parameters,
+                   encoding: JSONEncoding.default,
+                   headers: headers)
+        .validate()
+        .responseData { response in
+            switch response.result {
+            case .success(let data):
+                let json = JSON(data)
+                completion(.success(json))
+                
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
 }
