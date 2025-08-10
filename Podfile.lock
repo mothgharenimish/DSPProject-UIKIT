@@ -41,12 +41,14 @@ PODS:
     - IQKeyboardCore
   - IQTextView (1.0.5):
     - IQKeyboardToolbar/Placeholderable
+  - OTPFieldView (1.0.1)
   - SwiftyJSON (5.0.2)
 
 DEPENDENCIES:
   - Alamofire
   - CountryPickerView
   - IQKeyboardManagerSwift
+  - OTPFieldView
   - SwiftyJSON
 
 SPEC REPOS:
@@ -61,6 +63,7 @@ SPEC REPOS:
     - IQKeyboardToolbarManager
     - IQTextInputViewNotification
     - IQTextView
+    - OTPFieldView
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -74,8 +77,9 @@ SPEC CHECKSUMS:
   IQKeyboardToolbarManager: 6c693c8478d6327a7ef2107528d29698b3514dbb
   IQTextInputViewNotification: f5e954d8881fd9808b744e49e024cc0d4bcfe572
   IQTextView: ae13b4922f22e6f027f62c557d9f4f236b19d5c7
+  OTPFieldView: 700a752fe62c41d1c4914c78aa500fb30d97c255
   SwiftyJSON: f5b1bf1cd8dd53cd25887ac0eabcfd92301c6a5a
 
-PODFILE CHECKSUM: df1657feb7c7592328361329f36e3ec30b03b028
+PODFILE CHECKSUM: 48d1d5f028e0000fcd827a5826e0efaebcde9a30
 
 COCOAPODS: 1.16.2

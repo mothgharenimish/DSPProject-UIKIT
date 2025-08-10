@@ -10,6 +10,7 @@ target 'DSPProject-UIKIT' do
     pod 'SwiftyJSON'
     pod 'IQKeyboardManagerSwift'
     pod 'CountryPickerView'
+    pod 'OTPFieldView'
 
   target 'DSPProject-UIKITTests' do
     inherit! :search_paths

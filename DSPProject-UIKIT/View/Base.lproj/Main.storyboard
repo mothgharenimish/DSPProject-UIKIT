@@ -521,14 +521,81 @@
                                     <constraint firstItem="oGx-vx-O4c" firstAttribute="width" secondItem="fPV-5V-2BD" secondAttribute="width" id="ohd-xz-qW3"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14C-sS-JPN">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="0.32560055272108845" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAF-mg-zxM">
+                                <rect key="frame" x="16.666666666666657" y="296" width="360" height="260"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP Verification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXx-S9-jxf">
+                                        <rect key="frame" x="99.333333333333329" y="20" width="161.33333333333337" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <color key="textColor" name="#1E1E1E"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check your email and enter OTP for verification" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiZ-n8-1Z8">
+                                        <rect key="frame" x="15" y="63.333333333333314" width="330" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" name="#1E1E1E"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Sqh-my-sor">
+                                        <rect key="frame" x="18" y="203.66666666666669" width="324" height="34.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LC-jU-J1k">
+                                                <rect key="frame" x="0.0" y="0.0" width="151" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXu-3t-GeX">
+                                                <rect key="frame" x="173" y="0.0" width="151" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIO-Om-9r0" customClass="OTPFieldView" customModule="OTPFieldView">
+                                        <rect key="frame" x="18" y="119.33333333333331" width="324" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="53s-an-X57"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="RXx-S9-jxf" firstAttribute="centerX" secondItem="qAF-mg-zxM" secondAttribute="centerX" id="1Cz-Wn-p88"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sqh-my-sor" secondAttribute="trailing" constant="18" id="2pd-MK-eBX"/>
+                                    <constraint firstAttribute="trailing" secondItem="kIO-Om-9r0" secondAttribute="trailing" constant="18" id="2tz-qM-4L6"/>
+                                    <constraint firstAttribute="width" constant="360" id="6WC-dA-bmV"/>
+                                    <constraint firstAttribute="height" constant="260" id="CSh-Eu-ao6"/>
+                                    <constraint firstItem="NiZ-n8-1Z8" firstAttribute="leading" secondItem="qAF-mg-zxM" secondAttribute="leading" constant="15" id="DdQ-IK-9Zs"/>
+                                    <constraint firstItem="kIO-Om-9r0" firstAttribute="leading" secondItem="qAF-mg-zxM" secondAttribute="leading" constant="18" id="Kng-sg-RC9"/>
+                                    <constraint firstItem="NiZ-n8-1Z8" firstAttribute="top" secondItem="RXx-S9-jxf" secondAttribute="bottom" constant="17" id="Lup-2f-kUr"/>
+                                    <constraint firstItem="Sqh-my-sor" firstAttribute="top" secondItem="kIO-Om-9r0" secondAttribute="bottom" constant="34.329999999999998" id="OkD-Sf-SZo"/>
+                                    <constraint firstAttribute="trailing" secondItem="NiZ-n8-1Z8" secondAttribute="trailing" constant="15" id="aEL-wp-LIq"/>
+                                    <constraint firstItem="kIO-Om-9r0" firstAttribute="top" secondItem="NiZ-n8-1Z8" secondAttribute="bottom" constant="20" id="h02-5f-y8H"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sqh-my-sor" secondAttribute="bottom" constant="22" id="iEA-MC-KT8"/>
+                                    <constraint firstItem="RXx-S9-jxf" firstAttribute="top" secondItem="qAF-mg-zxM" secondAttribute="top" constant="20" id="osf-P8-Y0A"/>
+                                    <constraint firstItem="NiZ-n8-1Z8" firstAttribute="centerX" secondItem="qAF-mg-zxM" secondAttribute="centerX" id="ozB-fR-Inc"/>
+                                    <constraint firstItem="Sqh-my-sor" firstAttribute="leading" secondItem="qAF-mg-zxM" secondAttribute="leading" constant="18" id="zaG-L3-cHy"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qNd-Lq-XIt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="14C-sS-JPN" firstAttribute="leading" secondItem="qNd-Lq-XIt" secondAttribute="leading" id="8fu-mu-KOC"/>
+                            <constraint firstItem="qNd-Lq-XIt" firstAttribute="trailing" secondItem="14C-sS-JPN" secondAttribute="trailing" id="EeR-hZ-EvH"/>
                             <constraint firstItem="fPV-5V-2BD" firstAttribute="top" secondItem="umO-ah-sEr" secondAttribute="top" id="FGy-Ks-JXF"/>
+                            <constraint firstItem="qAF-mg-zxM" firstAttribute="centerX" secondItem="umO-ah-sEr" secondAttribute="centerX" id="LtJ-Qb-zcK"/>
+                            <constraint firstAttribute="bottom" secondItem="14C-sS-JPN" secondAttribute="bottom" id="Whn-US-jIo"/>
                             <constraint firstItem="qNd-Lq-XIt" firstAttribute="bottom" secondItem="fPV-5V-2BD" secondAttribute="bottom" id="XPa-Mi-xaN"/>
+                            <constraint firstItem="qAF-mg-zxM" firstAttribute="centerY" secondItem="umO-ah-sEr" secondAttribute="centerY" id="edE-MA-Mi9"/>
                             <constraint firstItem="qNd-Lq-XIt" firstAttribute="trailing" secondItem="fPV-5V-2BD" secondAttribute="trailing" id="mrl-rB-2cB"/>
                             <constraint firstItem="fPV-5V-2BD" firstAttribute="leading" secondItem="qNd-Lq-XIt" secondAttribute="leading" id="oLa-Ih-qvZ"/>
+                            <constraint firstItem="14C-sS-JPN" firstAttribute="top" secondItem="umO-ah-sEr" secondAttribute="top" id="oWW-xf-pwJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -546,6 +613,7 @@
                         <outlet property="mobileverifyBtn" destination="C80-Qi-hos" id="vlj-XC-ahG"/>
                         <outlet property="nameView" destination="Fi7-E6-5s8" id="nAp-WD-AUo"/>
                         <outlet property="nametxtField" destination="UNN-87-R7O" id="KL3-Fz-0lj"/>
+                        <outlet property="otpView" destination="kIO-Om-9r0" id="WpU-hF-wRO"/>
                         <outlet property="passwordView" destination="HCV-7A-UhK" id="7q0-4q-HK0"/>
                         <outlet property="passwordtxtField" destination="8Rp-r7-mhc" id="U5W-2A-qmc"/>
                     </connections>

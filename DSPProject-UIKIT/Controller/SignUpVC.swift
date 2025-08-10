@@ -7,10 +7,24 @@
 
 import UIKit
 import CountryPickerView
+import OTPFieldView
 
-class SignUpVC: UIViewController{
-  
+class SignUpVC: UIViewController, OTPFieldViewDelegate{
+    func shouldBecomeFirstResponderForOTP(otpTextFieldIndex index: Int) -> Bool {
+               return true
+    }
     
+    func enteredOTP(otp: String) {
+        print("OTPString: \(otp)")
+
+    }
+    
+    func hasEnteredAllOTP(hasEnteredAll: Bool) -> Bool {
+        return true
+
+    }
+    
+  
     
     @IBOutlet weak var nameView: UIView!
     @IBOutlet weak var nametxtField: UITextField!
@@ -28,10 +42,11 @@ class SignUpVC: UIViewController{
     @IBOutlet weak var countrypickerBtn: UIButton!
     @IBOutlet weak var passwordView: UIView!
     @IBOutlet weak var passwordtxtField: UITextField!
-        
+    @IBOutlet weak var otpView: OTPFieldView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         
         self.nameView.setCornerRadiusView(7)
@@ -54,7 +69,29 @@ class SignUpVC: UIViewController{
         self.passwordView.layer.borderColor = UIColor(hex: "#BFC8D9")?.cgColor
         self.passwordView.layer.borderWidth = 2.0
 
+        setupOtpView()
        
+    }
+    
+    
+    func setupOtpView(){
+        self.otpView.fieldsCount = 6
+        self.otpView.fieldBorderWidth = 2
+        self.otpView.defaultBorderColor = UIColor.gray
+        self.otpView.filledBorderColor = UIColor(hex: "#0F5EFF")!
+        self.otpView.cursorColor = UIColor.red
+        self.otpView.displayType = .square
+        self.otpView.fieldSize = 45
+        self.otpView.separatorSpace = 10
+        self.otpView.shouldAllowIntermediateEditing = true
+        self.otpView.delegate = self
+        self.otpView.initializeUI()
+        
+        // Apply corner radius to each OTP field
+          for field in self.otpView.subviews {
+              field.layer.cornerRadius = 8
+              field.layer.masksToBounds = true
+          }
     }
     
 

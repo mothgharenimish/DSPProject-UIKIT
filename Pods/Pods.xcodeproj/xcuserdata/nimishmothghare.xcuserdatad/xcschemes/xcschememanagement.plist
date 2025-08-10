@@ -144,40 +144,47 @@
 			<key>orderHint</key>
 			<integer>18</integer>
 		</dict>
-		<key>Pods-DSPProject-UIKIT-DSPProject-UIKITUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>21</integer>
-		</dict>
-		<key>Pods-DSPProject-UIKIT.xcscheme</key>
+		<key>OTPFieldView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
-		<key>Pods-DSPProject-UIKITTests.xcscheme</key>
+		<key>Pods-DSPProject-UIKIT-DSPProject-UIKITUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>22</integer>
 		</dict>
+		<key>Pods-DSPProject-UIKIT.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>Pods-DSPProject-UIKITTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>23</integer>
+		</dict>
 		<key>SwiftyJSON-SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>24</integer>
+			<integer>25</integer>
 		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>24</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
