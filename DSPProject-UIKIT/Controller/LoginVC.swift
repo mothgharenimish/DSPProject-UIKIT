@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
+
 
 class LoginVC: UIViewController {
     

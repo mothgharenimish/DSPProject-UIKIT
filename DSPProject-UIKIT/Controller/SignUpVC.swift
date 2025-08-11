@@ -8,6 +8,7 @@
 import UIKit
 import CountryPickerView
 import OTPFieldView
+import IQKeyboardManagerSwift
 
 class SignUpVC: UIViewController, OTPFieldViewDelegate{
     
@@ -44,6 +45,10 @@ class SignUpVC: UIViewController, OTPFieldViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.otpveriyBtn.setCornerRadiusButton(10)
+        self.cancelotpBtn.setCornerRadiusButton(10)
+        self.cancelotpBtn.layer.borderColor = UIColor(hex: "#0F5CFF")?.cgColor
+        self.cancelotpBtn.layer.borderWidth = 2.0
         
         self.emaildoneImg.isHidden = true
         self.mobilenodoneImg.isHidden = true
@@ -198,8 +203,12 @@ class SignUpVC: UIViewController, OTPFieldViewDelegate{
                 self.emailverifyBtn.isEnabled = true
                 self.mobileverifyBtn.isEnabled = true
                 
+                showAlert(title: "Sign Up", message: "Sign Up is Successfully done")
+                
             case .failure(let error):
                 print(" API Error: \(error.localizedDescription)")
+                showAlert(title: "Sign Up", message: "Sign Up is Failed try it again")
+
                 
             }
             
@@ -269,6 +278,13 @@ class SignUpVC: UIViewController, OTPFieldViewDelegate{
         navigationController?.popViewController(animated: true)
 
     }
+    
+    
+    func showAlert(title: String, message: String) {
+          let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+          alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+          self.present(alert, animated: true, completion: nil)
+      }
     
     
     
